@@ -1,6 +1,45 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @book %>
+<div id="<%= dom_id @book %>">
+  <div class="row">
+    <div class="col-md-4">
+      <% if @book.image.attached? %>
+        <img src="<%= (url_for(@book.image)) %>">
+      <% end %>
+    </div>
+    <div class="p-5 col-md-8">
+
+          <h2><%= @book.title %></h2>
+
+
+        <p>
+          <strong>Author:</strong>
+          <%= @book.author %>
+        </p>
+
+        <p>
+          <strong>Isbn:</strong>
+          <%= @book.isbn %>
+        </p>
+
+        <p>
+          <strong>Pages:</strong>
+          <%= @book.pages %>
+        </p>
+
+        <p>
+          <strong>Info:</strong>
+          <%= @book.info %>
+        </p>
+
+        <p>
+          <strong>Subject:</strong>
+          <%= @book.subject %>
+        </p>
+      </div>
+    </div>
+
+</div>
 
 <div>
   <%= link_to "Edit this book", edit_book_path(@book) %> |

@@ -32,6 +32,8 @@ gem "jbuilder"
 
 gem 'image_processing', '~> 1.12', '>= 1.12.1'
 
+gem 'active_storage_validations'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
