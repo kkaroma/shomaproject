@@ -10,40 +10,47 @@
       </ul>
     </div>
   <% end %>
+<div class="row">
+  <div class="col-md-6">
 
   <div>
     <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, class: "form-control" %>
   </div>
 
   <div>
     <%= form.label :author, style: "display: block" %>
-    <%= form.text_field :author %>
+    <%= form.text_field :author, class: "form-control" %>
   </div>
 
   <div>
     <%= form.label :isbn, style: "display: block" %>
-    <%= form.text_field :isbn %>
+    <%= form.text_field :isbn, class: "form-control" %>
+  </div>
+
+  <div>
+    <%= form.label :accno, style: "display: block" %>
+    <%= form.text_field :accno, class: "form-control" %>
   </div>
 
   <div>
     <%= form.label :language_id, style: "display: block" %>
-    <%= form.text_field :language_id %>
+    <%= form.text_field :language_id, class: "form-control" %>
   </div>
 
   <div>
     <%= form.label :pages, style: "display: block" %>
-    <%= form.number_field :pages %>
+    <%= form.number_field :pages, class: "form-control" %>
   </div>
 
   <div>
     <%= form.label :info, style: "display: block" %>
-    <%= form.text_area :info %>
+    <%= form.text_area :info, class: "form-control", :rows => 10 %>
   </div>
 
   <div>
     <%= form.label :subject, style: "display: block" %>
-    <%= form.text_field :subject %>
+    <%= form.text_field :subject, class: "form-control" %>
   </div>
 
   <div>
@@ -52,6 +59,10 @@
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-success" %>
   </div>
+
+  </div>
+  </div>
+
 <% end %>
