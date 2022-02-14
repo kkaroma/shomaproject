@@ -13,6 +13,7 @@ class BooksController < ApplicationController
   # GET /books/new
   def new
     @book = Book.new
+    @categories = Category.all
   end
 
   # GET /books/1/edit
@@ -65,6 +66,6 @@ class BooksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def book_params
-      params.require(:book).permit(:title, :author, :isbn, :pages, :info, :subject, :image, :accno)
+      params.require(:book).permit(:title, :author, :isbn, :pages, :info, :subject, :image, :accno, :category_id)
     end
 end

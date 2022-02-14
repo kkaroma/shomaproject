@@ -24,6 +24,11 @@
   </div>
 
   <div>
+    <%= form.label :category, style: "display: block" %>
+    <%= form.select :category_id, Category.all.collect { |c| [c.name, c.id ]}, include_blank: true, class: "form-control" %>
+  </div>
+
+  <div>
     <%= form.label :isbn, style: "display: block" %>
     <%= form.text_field :isbn, class: "form-control" %>
   </div>
