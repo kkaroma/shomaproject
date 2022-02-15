@@ -4,19 +4,19 @@
 <table>
 <div id="books">
   <% @books.each do |book| %>
-  
+
     <tr>
       <td>
-        <%= book.title %>
+        <%= link_to book.title, book %>
         <br /><small class="text-muted">by <%= book.author %> </small>
     </td>
     <td>
-      <%= link_to "Show this book", book %>
+    
     </td>
     </tr>
   <% end %>
 </div>
 <p>
   </table>
-<%= link_to "New book", new_book_path %>
+<%= link_to "Create New book", new_book_path, class: "btn btn-primary mt-4" %>
 </p>
