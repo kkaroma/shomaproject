@@ -1,2 +1,29 @@
 <h1 class="text-center display-4">Shoma Project</h1>
 <h4 class="text-center"><small class="text-muted">For Books readers</small></h4>
+
+<div class="row">
+  <div class="col-md-12">
+    <h5 class = "display-6 text-center mt-4">
+      Manage your books by keeping their details in Shoma, you can share the books you have, exchange with other books readers or even donate.
+      Write review about a book that you have read or keep notice for yourself. Let other users comment on you review and discuss or show
+      other angle of the understanding.
+    </h5>
+  </div>
+</div><!-- end row -->
+<div class="row">
+  <div class="col-md-12">
+    <h1 class="display2">Recent books</h1>
+    <div class="row">
+    <% @recent_books.each do |book| %>
+      <div class="col-md-3">
+      <% if book.image.attached? %>
+      <img src="<%= (url_for(book.image)) %>" class="img img-fluid">
+      <strong><%= book.title %></strong>
+      <% end %>
+      </div>
+    <% end %>
+    </div>
+</div>
+
+  </div><!-- end col-12 -->
+</div><!-- end of recent row -->
