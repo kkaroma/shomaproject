@@ -5,6 +5,8 @@
     <div class="col-md-4">
       <% if @book.image.attached? %>
         <img src="<%= (url_for(@book.image)) %>">
+      <% else %>
+          redirect_to @book
       <% end %>
     </div>
     <div class="p-5 col-md-8">
