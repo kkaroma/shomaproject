@@ -49,8 +49,8 @@
   </div>
 
   <div>
-    <%= form.label :info, style: "display: block" %>
-    <%= form.text_area :info, class: "form-control", :rows => 10 %>
+    <%= form.label :body, style: "display: block" %>
+    <%= form.rich_text_area :body, class: "form-control" %>
   </div>
 
   <div>
@@ -64,7 +64,7 @@
   </div>
 
   <div>
-    <%= form.submit class: "btn btn-success" %>
+    <%= form.submit class: "btn btn-success mt-2" %>
   </div>
 
   </div>
