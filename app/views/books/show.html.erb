@@ -36,6 +36,15 @@
         </p>
 
         <p>
+          <strong>Have you read this book?:</strong>
+          <% if @book.read == true %>
+            Yes
+          <% else %>
+            No
+          <% end %>
+        </p>
+
+        <p>
           <strong>Body:</strong>
           <%= @book.body %>
         </p>

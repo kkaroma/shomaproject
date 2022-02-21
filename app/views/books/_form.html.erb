@@ -53,6 +53,11 @@
     <%= form.rich_text_area :body, class: "form-control" %>
   </div>
 
+  <div class = "form-check">
+  
+    Have you read this book? <%= form.check_box :read, class: "form-check-input" %>
+  </div>
+
   <div>
     <%= form.label :image, style: "display: block" %>
     <%= form.file_field :image, accept: 'image/png, image/gif, image/jpeg' %>
