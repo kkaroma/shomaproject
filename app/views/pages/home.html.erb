@@ -29,9 +29,9 @@
 <div class="row">
   <div class="col-md-12">
     <hr />
-    <% category = Category.all %>
-    <% category.each do |cat| %>
-      <%= link_to cat.name, category_path(cat) %>
+
+    <% @category.each do |cat| %>
+      <%= link_to cat.name, category_path(cat), class: "p-2" %>
     <% end %>
   </div>
 </div>
