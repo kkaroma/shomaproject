@@ -17,7 +17,8 @@
     <% @recent_books.each do |book| %>
       <div class="col-md-3">
       <% if book.image.attached? %>
-      <img src="<%= (url_for(book.image)) %>" class="img img-fluid" width = "80"><br />
+      <%= image_tag(book) %>
+
       <strong><%= book.title %></strong>
       <% end %>
       </div>
