@@ -8,7 +8,6 @@ class CategoriesController < ApplicationController
 
   # GET /categories/1 or /categories/1.json
   def show
-    @books_category = Book.where(category_id: set_category)
   end
 
   # GET /categories/new
