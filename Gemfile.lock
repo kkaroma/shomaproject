@@ -127,7 +127,6 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    jmespath (1.6.0)
     jsbundling-rails (1.0.0)
       railties (>= 6.0.0)
     loofah (2.13.0)
@@ -244,7 +243,6 @@ PLATFORMS
 
 DEPENDENCIES
   active_storage_validations
-  aws-sdk-s3
   bootsnap
   capybara
   cssbundling-rails
